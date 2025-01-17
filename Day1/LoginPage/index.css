@@ -1,0 +1,184 @@
+:root {
+    --primary: #3b82f6;
+    --primary-foreground: #ffffff;
+    --background: #f3f4f6;
+    --foreground: #1f2937;
+    --muted: #e5e7eb;
+    --muted-foreground: #6b7280;
+    --accent: #10b981;
+    --accent-foreground: #ffffff;
+    --border: #d1d5db;
+  }
+  
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: var(--background);
+    color: var(--foreground);
+    line-height: 1.6;
+  }
+  
+  header {
+    background-color: var(--primary);
+    color: var(--primary-foreground);
+    padding: 1rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  h1 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+  }
+  
+  nav {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 1rem;
+  }
+  
+  button {
+    background-color: var(--primary);
+    color: var(--accent-foreground);
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 0.25rem;
+    font-size: 0.875rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+  }
+  
+  button:hover {
+    background-color: #0ea271;
+  }
+  
+  main {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+  }
+  
+  section {
+    background-color: #ffffff;
+    border-radius: 0.5rem;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+    margin-bottom: 2rem;
+    display: none;
+    animation: fadeIn 0.3s ease;
+  }
+  
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+  
+  section.active {
+    display: block;
+  }
+  
+  h2 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+    color: var(--primary);
+  }
+  
+  form {
+    display: grid;
+    gap: 1rem;
+  }
+  
+  .form-group {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  label {
+    font-size: 0.875rem;
+    font-weight: 500;
+    margin-bottom: 0.25rem;
+  }
+  
+  input, textarea, select {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid var(--border);
+    border-radius: 0.25rem;
+    font-size: 0.875rem;
+    transition: border-color 0.2s ease;
+  }
+  
+  input:focus, textarea:focus, select:focus {
+    outline: none;
+    border-color: var(--primary);
+    box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.1);
+  }
+  
+  textarea {
+    resize: vertical;
+    min-height: 100px;
+  }
+  
+  form button {
+    justify-self: start;
+  }
+  
+  /* Auth pages styles */
+  .auth-container {
+    max-width: 400px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background-color: #ffffff;
+    border-radius: 0.5rem;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  }
+  
+  .auth-container h1 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+  }
+  
+  .auth-form {
+    display: grid;
+    gap: 1rem;
+  }
+  
+  .auth-form h2 {
+    text-align: center;
+  }
+  
+  .auth-form button {
+    width: 100%;
+  }
+  
+  .auth-container p {
+    text-align: center;
+    margin-top: 1rem;
+    font-size: 0.875rem;
+  }
+  
+  .auth-container a {
+    color: var(--primary);
+    text-decoration: none;
+  }
+  
+  .auth-container a:hover {
+    text-decoration: underline;
+  }
+  
+  @media (max-width: 768px) {
+    .auth-container {
+      margin: 1rem;
+      padding: 1.5rem;
+    }
+  }
+  
+  

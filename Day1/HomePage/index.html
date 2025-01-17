@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Productivity Tracker</title>
+    <link rel="stylesheet" href="index.css"> <!-- Link to external CSS for styling -->
+</head>
+
+<body>
+    <header>
+        <h1>Employee Productivity Tracker</h1>
+        <nav>
+            <!-- Navigation buttons for task log and dashboard -->
+            <button id="taskLogBtn">Task Log</button>
+            <button id="dashboardBtn">Dashboard</button>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Task Log Section -->
+        <section id="taskLog" class="active">
+            <h2>Task Log</h2>
+            <form id="taskForm">
+
+                <!-- Input fields for logging tasks -->
+                <input type="text" id="taskTitle" placeholder="Task Title" required>
+                <textarea id="taskDescription" placeholder="Task Description" required></textarea>
+                <input type="number" id="timeSpent" placeholder="Time Spent (minutes)" required>
+                <select id="taskPriority" required>
+                    <option value="">Select Priority</option>
+                    <option value="low">Low</option>
+                    <option value="medium">Medium</option>
+                    <option value="high">High</option>
+                </select>
+                <select id="taskCategory" required>
+                    <option value="">Select Category</option>
+                    <option value="BAU">BAU</option>
+                    <option value="Ad Hoc">Ad Hoc</option>
+                    <option value="Project-Based">Project-Based</option>
+                </select>
+                <input type="text" id="taskReference" placeholder="Task Reference">
+                <input type="file" id="supportingDocuments" multiple> <!-- File input for supporting documents -->
+                <input type="url" id="taskLink" placeholder="Supporting Link (URL)"> <!-- URL input for links -->
+                <button type="submit">Log Task</button>
+            </form>
+            <div id="taskTimeline"></div> <!-- Placeholder for displaying task timeline -->
+        </section>
+
+
+
+        <!-- Dashboard Section -->
+        <section id="dashboard">
+            <h2>Dashboard</h2>
+            <div id="productivityChart"></div> <!-- Placeholder for productivity chart -->
+            <div id="taskBreakdown"></div> <!-- Placeholder for task breakdown visualizations -->
+
+            <!-- Filtering Options for the task table -->
+            <label for="filterType">Filter by Type:</label>
+            <select id="filterType">
+                <option value="">All</option>
+                <option value="BAU">BAU</option>
+                <option value="Ad Hoc">Ad Hoc</option>
+                <option value="Project-Based">Project-Based</option>
+            </select>
+
+            <label for="filterPriority">Filter by Priority:</label>
+            <select id="filterPriority">
+                <option value="">All</option>
+                <option value="low">Low</option>
+                <option value="medium">Medium</option>
+                <option value="high">High</option>
+            </select>
+
+
+            <!-- Table for displaying logged tasks -->
+            <table id="taskTable">
+                <thead>
+                    <tr>
+                        <th>Title</th>
+                        <th>Description</th>
+                        <th>Time Spent</th>
+                        <th>Priority</th>
+                        <th>Category</th>
+                        <th>Reference</th>
+                    </tr>
+                </thead>
+                <tbody></tbody> <!-- Body where task data will be populated -->
+            </table>
+
+
+            <!-- Customizable Reports Section -->
+            <h3>Generate Custom Reports</h3>
+            <label for="reportTimeframe">Select Timeframe:</label>
+            <select id="reportTimeframe">
+                <option value="daily">Daily</option>
+                <option value="weekly">Weekly</option>
+                <option value="monthly">Monthly</option>
+            </select>
+
+            <label for="reportTeam">Select Team:</label>
+            <select id="reportTeam">
+                <option value="all">All Teams</option>
+                <option value="teamA">Team A</option>
+                <option value="teamB">Team B</option>
+            </select>
+
+            <label for="reportTaskType">Select Task Type:</label>
+            <select id="reportTaskType">
+                <option value="all">All Tasks</option>
+                <option value="BAU">BAU</option>
+                <option value="Ad Hoc">Ad Hoc</option>
+                <option value="Project-Based">Project-Based</option>
+            </select>
+
+            <button id="generateReportBtn">Generate Report</button> <!-- Button to generate reports -->
+        </section>
+
+
+
+        <!-- AI-Powered Insights Section -->
+        <section id="aiInsights">
+            <h2>AI-Powered Productivity Insights</h2>
+
+            <div id="efficiencyScore">
+                <h3>Task Efficiency Scoring</h3>
+                <p>Efficiency Score: <span id="efficiencyScoreValue"></span></p> <!-- Display efficiency score -->
+                <p>Actionable Feedback: <span id="efficiencyFeedback"></span></p>
+                <!-- Display feedback based on efficiency -->
+            </div>
+
+            <div id="adHocImpactAnalysis">
+                <h3>Ad Hoc Task Impact Analysis</h3>
+                <p>Impact Summary: <span id="adHocImpactSummary"></span></p> <!-- Summary of ad hoc task impacts -->
+            </div>
+
+            <div id="performancePrediction">
+                <h3>Performance Prediction</h3>
+                <p>Predicted Trends: <span id="predictedTrends"></span></p>
+                <!-- Display predicted performance trends -->
+            </div>
+
+            <div id="sentimentMonitoring">
+                <h3>Sentiment Monitoring</h3>
+                <p>Current Sentiment: <span id="currentSentiment"></span></p>
+                <!-- Display current sentiment analysis -->
+            </div>
+        </section>
+    </main>
+
+
+    <!-- Footer information -->
+    <footer>
+        <p>&copy; 2025 Employee Task Management System | All Rights Reserved</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script> <!-- Chart.js library for visualizations -->
+    <script src="index.js"></script> <!-- Link to external JavaScript file -->
+</body>
+
+</html>
