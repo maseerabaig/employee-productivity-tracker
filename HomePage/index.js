@@ -29,6 +29,7 @@ function showTaskLog() {
   dashboard.classList.remove("active");
 }
 
+
 function showDashboard() {
   dashboard.classList.add("active");
   taskLog.classList.remove("active");
@@ -129,6 +130,16 @@ function updateProductivityChart() {
   });
 }
 
+const leaderboardBtn = document.getElementById("leaderboardBtn");
+
+leaderboardBtn.addEventListener("click", openLeaderboard);
+
+function openLeaderboard() {
+  window.location.href = "../Gamification/index.html"; // Path to the leaderboard file
+}
+
+
+
 function updateTaskBreakdown() {
   const ctx = document.getElementById("taskBreakdown").getContext("2d");
   const categories = ["BAU", "Ad Hoc", "Project-Based"];
@@ -192,3 +203,6 @@ function generateReport() {
 
 // Initialize the app
 showTaskLog();
+
+
+
