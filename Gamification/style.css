@@ -1,0 +1,102 @@
+:root {
+    --primary: #007bff;
+    --primary-foreground: #ffffff;
+    --accent: #ffcc00;
+    --border: #ddd;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f7fc;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+#gamification {
+    margin-top: 2rem;
+    padding: 1rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+#leaderboards, #teamChallenges {
+    background-color: #ffffff;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+h3 {
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+}
+
+table {
+    width: 100%;
+    margin-top: 1rem;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 0.75rem;
+    text-align: left;
+}
+
+th {
+    background-color: var(--primary);
+    color: var(--primary-foreground);
+}
+
+#teamChallenges form {
+    display: grid;
+    gap: 1rem;
+}
+
+input {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid var(--border);
+    border-radius: 0.25rem;
+}
+
+button {
+    background-color: var(--primary);
+    color: var(--primary-foreground);
+    padding: 0.75rem;
+    border-radius: 0.25rem;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: var(--accent);
+}
+
+#challengeList {
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.challenge {
+    background-color: #f9fafb;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.challenge h4 {
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+.challenge p {
+    margin: 0.5rem 0;
+}
