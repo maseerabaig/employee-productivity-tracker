@@ -41,7 +41,7 @@ function handleSignup(event) {
 
   // Simulate successful signup
   alert("Signup successful! Please log in.");
-  window.location.href= "./login.html"; // Redirect to login page
+  window.location.href= "../LoginPage/login.html"; // Redirect to login page
 }
 
 function validatePassword(password) {
