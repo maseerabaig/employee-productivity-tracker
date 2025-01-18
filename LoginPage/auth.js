@@ -21,7 +21,7 @@ function handleLogin(event) {
 
   // Simulate successful login
   alert("Login successful!");
-  window.location.href = "../HomePage/index.html"; // Redirect to main app page
+  window.location.href = "../role/index.html"; // Redirect to main app page
 }
 
 function handleSignup(event) {
@@ -41,7 +41,7 @@ function handleSignup(event) {
 
   // Simulate successful signup
   alert("Signup successful! Please log in.");
-  window.location.href = "../LoginPage/login.html"; // Redirect to login page
+  window.location.href = ""; // Redirect to login page
 }
 
 function validatePassword(password) {

@@ -98,3 +98,8 @@ document.addEventListener("DOMContentLoaded", () => {
     backButton.addEventListener("click", goBack);
   });
   
+  const cont=document.querySelector("#continueButton")
+
+cont.addEventListener("click", ()=>{
+  window.location.href="../HomePage/index.html"
+})
