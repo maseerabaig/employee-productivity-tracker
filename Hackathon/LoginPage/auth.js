@@ -21,7 +21,7 @@ function handleLogin(event) {
 
   // Simulate successful login
   alert("Login successful!");
-  window.location.href = "../HomePage/index.html"; // Redirect to main app page
+  window.location.href = "../role/index.html"; // Redirect to main app page
 }
 
 function handleSignup(event) {
