@@ -143,19 +143,19 @@ To set up the project locally:
 ## Screenshots
 
 1. **SignUp Page:**  
-   ![SignUp Page](SignupPage.png)
+   ![SignUp Page](./Hackathon/Readme%20file/SignupPage.png)
 
 2. **Login Page:**  
-   ![Login Page](LoginPage.png)
+   ![Login Page](./Hackathon/Readme%20file/LoginPage.png)
 
 3. **Home Page:**  
-   ![Home Page](MainDashbaord.png)
+   ![Home Page](./Hackathon/Readme%20file/MainDashbaord.png)
 
 4. **Rolebased Acces control:**  
-   ![RolebasedAccesControll](RolebasedAccesControl.png)
+   ![RolebasedAccesControll](./Hackathon/Readme%20file/RolebasedAccesControl.png)
 
 5. **Genrate Report:**  
-   ![genratereport](genratereport.png)   
+   ![genratereport](./Hackathon/Readme%20file/genratereport.png)   
 
 ---
 
