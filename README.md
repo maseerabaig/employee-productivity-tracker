@@ -89,13 +89,13 @@ To set up the project locally:
 1. Clone the repository:
 
    ```bash
-   git clone https://https:/github.com/sahilnikalje/1885.git
+   git clone https://github.com/maseerabaig/employee-productivity-tracker.git
    ```
 
 2. Navigate to the project directory:
 
    ```bash
-   cd sahilnikalje/1885
+   cd Hackathon
    ```
 
 3. Open the project in your favorite code editor.
