@@ -159,10 +159,6 @@ To set up the project locally:
 
 ---
 
-## Video Link
-
-- **Project Overview:** [https://drive.google.com/file/d/1egO5LbjJF17ccOC0hFhiyLgNrOdWAnvE/view?usp=sharing](#)
-
 ---
 
 ## Future Scope
@@ -171,12 +167,6 @@ To set up the project locally:
 - Mobile Application: Develop a mobile version for on-the-go task logging.
 - Integration with Other Tools: Support integration with tools like Trello or Asana.
 
-## Team Members
-
-- Sahil Narayan Nikalje - Team Lead
-- Tikesh Aswale - Team Member
-- Sneha Nahak - Team Member
-- Maseera Shahahusain Baig - Team Member
 
 ## Acknowledgments
 
