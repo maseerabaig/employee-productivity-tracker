@@ -35,7 +35,7 @@ Fullstack
 
 ## Project Link
 
-[Employee Productivity Tracker](https://github.com/sahilnikalje/1885/tree/main/Hackathon)
+[Employee Productivity Tracker](https://github.com/maseerabaig/employee-productivity-tracker.git)
 
 ## Deployed App
 
